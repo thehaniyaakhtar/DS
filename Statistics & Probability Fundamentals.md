@@ -3,19 +3,41 @@
 - Does not try to generalize/predict
 - Only answers how the dataset looks like
 
-1. Measures of Central Tendency:
-   - Mean: Average
+1. Measures of Central Tendency: center of data
+   - Mean: Average; balancing point of dataset
+        - Uses every point in dataset
+        - Sensitive to outliers
+        - Minimizes total squared distance/total squared error, thus used in Regression
    - Median: Middle Value
+        - Ignores magnitude
+        - Robust to outliers
+        - Better for skewed data
    - Mode: Most frequent value
+        - Data is categorical
+        - popularity matters
      
-2. Measures of Spread:
+2. Measures of Spread/Dispersion: How spread out is the data
    - Range: Max - Min
+        - Extremely sensitive to outliers
    - Variance: Average: Average Squared deviation
+        - Avg squ distance from mean, removes -ve signs
+        - squ penalize large deviations heavily
+        - Measures how far data spreads around the mean
    - Standard Deviation: Typical distance from mean
+        - how far away a typical observation is form the mean
+        - In a normal distribution:
+             - 68% within 1 SD
+             - 95% within 2 SD
+             - 99.7% within 3 SD
    - IQR: Middle 50% spread
+        - = Q3 - Q1
+        - Robust
+
+   - Dispersion matters: High variance = unstable model
+                         Low Variance = consistent behavior
 
 3. Distribution Shape:
-   - Skewness (left or right tail)
+   - Skewness (left or right tail): Assymetry of distribution
    - Kurtosis (weight of tail)
 
 - Inferential Statistics: Using a small sample to make conclusions about a larger population
@@ -34,3 +56,6 @@
    - Poplulation slope is estimated
    - Significance of features
    - Confidence intervals of coefficients
+  
+## Measures of central tendency, dispersion, skewness, kurtosis
+
