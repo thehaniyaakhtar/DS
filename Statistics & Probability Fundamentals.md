@@ -85,6 +85,17 @@
       - appears when small independent random effects combine, due to CLT
       - Bell Shaped, symmetric, mean = median = mode
       - mean = center; variance = spread
-  
-      -  
+
+3. Binomial Distribution: Discrete Variables; counts number of succeses in n trials
+      - Discrete variables, counts number of successes in n trials
+      - n: no. of trials; p: prob of success
+      - mean: np; variance: np(1-p)
+
+4. Poisson Distribution: Discrete, counts number of events in fixed interval
+      - How many times is something happening in a fixed space or time
+      - λ (lambda) = average rate of events; Mean = λ Variance = λ; equality is very important.
+
+5. Exponential Distribution: Continuous variables
+      - How long until the next event?
+      - λ: rate parameter; mean = 1/λ 
 
