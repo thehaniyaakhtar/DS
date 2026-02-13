@@ -101,7 +101,15 @@
 
 ## Law of Large Numbers (LLN)
       - As sample size n -> ∞
-      Sample Mean -> Population Mean
-      Averages converge
+      - Sample Mean -> Population Mean
+      - Averages converge
 
+## Central Limit Theorem (CLT)
+      - What does the distribution look like
+      - Even if original data is skewed, ,uniform, exponential, weird shaped,
+      for many samples of n, computing means, plotting them, as size of n becomes large, the means form a normal distribution.
+
+#### LLN: with more data, estimates stabilize
+#### CLT: with more data, sampling distribution becomes normal
+      
 
