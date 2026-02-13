@@ -111,5 +111,9 @@
 
 #### LLN: with more data, estimates stabilize
 #### CLT: with more data, sampling distribution becomes normal
+
+## Hypothesis Testing
+Is an effect real or just random noise
+
       
 
