@@ -73,5 +73,18 @@
    - Significance of features
    - Confidence intervals of coefficients
   
-## Measures of central tendency, dispersion, skewness, kurtosis
+## Probability distributions (Normal, Binomial, Poisson, Exponential, Bernoulli)
+
+1. Bernoulli Distribution: single binary outcome
+      - Discrete variables
+      - 2 possible outcomes 0 or 1
+      - p: prob of success; mean = p; variance = p(1-p)
+
+2. Normal Distribution: continuous variable
+      - models values that can take any real number.
+      - appears when small independent random effects combine, due to CLT
+      - Bell Shaped, symmetric, mean = median = mode
+      - mean = center; variance = spread
+  
+      -  
 
