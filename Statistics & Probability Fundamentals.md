@@ -97,5 +97,11 @@
 
 5. Exponential Distribution: Continuous variables
       - How long until the next event?
-      - λ: rate parameter; mean = 1/λ 
+      - λ: rate parameter; mean = 1/λ
+
+## Law of Large Numbers (LLN)
+      - As sample size n -> ∞
+      Sample Mean -> Population Mean
+      Averages converge
+
 
