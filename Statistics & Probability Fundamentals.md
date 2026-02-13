@@ -38,7 +38,23 @@
 
 3. Distribution Shape:
    - Skewness (left or right tail): Assymetry of distribution
+        - Symmetric(Skew = 0) Median ~ Mean ~ Mode
+            - Normal Distribution
+        - Positive Skew (Right Skew) Mean > Median
+            - Outliers on the high end
+        - Negative Skew (Left Skew) Median > Mean
    - Kurtosis (weight of tail)
+        - NOT about the peak height, about outliers
+        - Mesokurtic (Normal)
+        - Leptokurtic (High Kurtosis) 
+             - Heavy tails
+             - More extreme outliers
+             - Higher risk
+        - Playkurtic (Low Kurtosis)
+             - Light tails
+             - Fewer outliers
+        - High Kurtosis: finance: extreme risk events
+                         ML: outlier sensitivity  
 
 - Inferential Statistics: Using a small sample to make conclusions about a larger population
 - Entire population cannot be measured, a sample is analyzed and the population is infered
