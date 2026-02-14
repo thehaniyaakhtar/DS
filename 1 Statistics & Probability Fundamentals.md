@@ -17,44 +17,44 @@ Mode: Most frequent value
    - popularity matters
      
 2. Measures of Spread/Dispersion: How spread out is the data
-   - Range: Max - Min
-        - Extremely sensitive to outliers
-   - Variance: Average: Average Squared deviation
-        - Avg squ distance from mean, removes -ve signs
-        - squ penalize large deviations heavily
-        - Measures how far data spreads around the mean
-   - Standard Deviation: Typical distance from mean
-        - how far away a typical observation is form the mean
-        - In a normal distribution:
-             - 68% within 1 SD
-             - 95% within 2 SD
-             - 99.7% within 3 SD
-   - IQR: Middle 50% spread
-        - = Q3 - Q1
-        - Robust
+Range: Max - Min
+   - Extremely sensitive to outliers
+Variance: Average: Average Squared deviation
+   - Avg squ distance from mean, removes -ve signs
+   - squ penalize large deviations heavily
+   - Measures how far data spreads around the mean
+Standard Deviation: Typical distance from mean
+   - how far away a typical observation is form the mean
+   - In a normal distribution:
+     - 68% within 1 SD
+     - 95% within 2 SD
+     - 99.7% within 3 SD
+IQR: Middle 50% spread
+     - = Q3 - Q1
+     - Robust
 
-   - Dispersion matters: High variance = unstable model
-                         Low Variance = consistent behavior
+#### Dispersion matters: High variance = unstable model
+####                     Low Variance = consistent behavior
 
 3. Distribution Shape:
-   - Skewness (left or right tail): Assymetry of distribution
-        - Symmetric(Skew = 0) Median ~ Mean ~ Mode
-            - Normal Distribution
-        - Positive Skew (Right Skew) Mean > Median
-            - Outliers on the high end
-        - Negative Skew (Left Skew) Median > Mean
-   - Kurtosis (weight of tail)
-        - NOT about the peak height, about outliers
-        - Mesokurtic (Normal)
-        - Leptokurtic (High Kurtosis) 
-             - Heavy tails
-             - More extreme outliers
-             - Higher risk
-        - Playkurtic (Low Kurtosis)
-             - Light tails
-             - Fewer outliers
-        - High Kurtosis: finance: extreme risk events
-                         ML: outlier sensitivity  
+Skewness (left or right tail): Assymetry of distribution
+   - Symmetric(Skew = 0) Median ~ Mean ~ Mode
+     - Normal Distribution
+   - Positive Skew (Right Skew) Mean > Median
+     - Outliers on the high end
+   - Negative Skew (Left Skew) Median > Mean
+Kurtosis (weight of tail)
+   - NOT about the peak height, about outliers
+   - Mesokurtic (Normal)
+   - Leptokurtic (High Kurtosis) 
+     - Heavy tails
+     - More extreme outliers
+     - Higher risk
+Playkurtic (Low Kurtosis)
+     - Light tails
+     - Fewer outliers
+High Kurtosis: finance: extreme risk events
+       ML: outlier sensitivity  
 
 - Inferential Statistics: Using a small sample to make conclusions about a larger population
 - Entire population cannot be measured, a sample is analyzed and the population is infered
@@ -76,37 +76,37 @@ Mode: Most frequent value
 ## Probability distributions (Normal, Binomial, Poisson, Exponential, Bernoulli)
 
 1. Bernoulli Distribution: single binary outcome
-      - Discrete variables
-      - 2 possible outcomes 0 or 1
-      - p: prob of success; mean = p; variance = p(1-p)
+   - Discrete variables
+   - 2 possible outcomes 0 or 1
+   - p: prob of success; mean = p; variance = p(1-p)
 
 2. Normal Distribution: continuous variable
-      - models values that can take any real number.
-      - appears when small independent random effects combine, due to CLT
-      - Bell Shaped, symmetric, mean = median = mode
-      - mean = center; variance = spread
+   - models values that can take any real number.
+   - appears when small independent random effects combine, due to CLT
+   - Bell Shaped, symmetric, mean = median = mode
+   - mean = center; variance = spread
 
 3. Binomial Distribution: Discrete Variables; counts number of succeses in n trials
-      - Discrete variables, counts number of successes in n trials
-      - n: no. of trials; p: prob of success
-      - mean: np; variance: np(1-p)
+   - Discrete variables, counts number of successes in n trials
+   - n: no. of trials; p: prob of success
+   - mean: np; variance: np(1-p)
 
 4. Poisson Distribution: Discrete, counts number of events in fixed interval
-      - How many times is something happening in a fixed space or time
-      - λ (lambda) = average rate of events; Mean = λ Variance = λ; equality is very important.
+   - How many times is something happening in a fixed space or time
+   - λ (lambda) = average rate of events; Mean = λ Variance = λ; equality is very important.
 
 5. Exponential Distribution: Continuous variables
-      - How long until the next event?
-      - λ: rate parameter; mean = 1/λ
+   - How long until the next event?
+   - λ: rate parameter; mean = 1/λ
 
 ## Law of Large Numbers (LLN)
-      - As sample size n -> ∞
-      - Sample Mean -> Population Mean
-      - Averages converge
+   - As sample size n -> ∞
+   - Sample Mean -> Population Mean
+   - Averages converge
 
 ## Central Limit Theorem (CLT)
-      - What does the distribution look like
-      - Even if original data is skewed, ,uniform, exponential, weird shaped,
+   - What does the distribution look like
+   - Even if original data is skewed, ,uniform, exponential, weird shaped,
       for many samples of n, computing means, plotting them, as size of n becomes large, the means form a normal distribution.
 
 #### LLN: with more data, estimates stabilize
@@ -146,22 +146,22 @@ Every hypothesis testing seperates signal and random variation.
         - result is consistent with random chance
         - fail to reject null hypothesis
 
-### Type I and Type II Errors
+## Type I and Type II Errors
 
-## Type I Error (False Positive)
+### Type I Error (False Positive)
    - Reject H0 when H0 is actually true.
    - Detect an effect that doesnt exist
    - Probability of Type 1 error = α
    - Eg: You claim a drug works, but it doesnt.
 
-## Type II Error (False Negative)
+### Type II Error (False Negative)
    - Fail to reject H0 when H1 is true.
    - Probbaility = β
    - Eg: Drug actually works but you conclude that it doesn't.
 
 #### If you decrease α, β increases.
 
-### Power of a Test
+## Power of a Test
    - Power = 1 − β
    - Probability of correctly detecting a real effect
    - High power: if effect exists we are likely to detect it.
@@ -180,7 +180,7 @@ Every hypothesis testing seperates signal and random variation.
 - Sample statistics vary from sample to sample
 - CI intervals quantify that uncertainty
 
-  #### Structure of CI = Estimate +- Margin or Error
+#### Structure of CI = Estimate +- Margin or Error
 
 ### Margin of Error
 - = z* x Standard Error
