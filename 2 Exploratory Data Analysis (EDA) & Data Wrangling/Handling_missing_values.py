@@ -1,5 +1,5 @@
 """ 
-Why is a value missing:
+Why is a value missing?
 MCAR: Missing Completely at Random
 Missingness unrelated to any variable
 
