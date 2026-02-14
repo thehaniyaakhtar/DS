@@ -28,3 +28,23 @@ Cons: Reduces variance artificially
 Median is used if data is skewed, outliers exist.
 '''
 
+# KNN Implementation
+'''
+Instead of filling with global average, the values of similar rows are used
+for each missing value: 
+find k nearest neighbors
+take avg
+fill value
+
+preserves local structure
+
+slow for large datasets
+sensitive to scaling
+
+Must scale features before KNN
+'''
+from sklearn.preprocessing import StandardScaler
+from sklearn.impute import KNNImputer
+imputer = KNNImputer(n_neighbors=3)
+X_imputed = imputer.fit_transform(X)
+
