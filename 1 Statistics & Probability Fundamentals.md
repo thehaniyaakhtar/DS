@@ -146,6 +146,33 @@ Every hypothesis testing seperates signal and random variation.
         - result is consistent with random chance
         - fail to reject null hypothesis
 
+### Type I and Type II Errors
+
+## Type I Error (False Positive)
+   - Reject H0 when H0 is actually true.
+   - Detect an effect that doesnt exist
+   - Probability of Type 1 error = α
+   - Eg: You claim a drug works, but it doesnt.
+
+## Type II Error (False Negative)
+   - Fail to reject H0 when H1 is true.
+   - Probbaility = β
+   - Eg: Drug actually works but you conclude that it doesn't.
+
+#### If you decrease α, β increases.
+
+### Power of a Test
+   - Power = 1 − β
+   - Probability of correctly detecting a real effect
+   - High power: if effect exists we are likely to detect it.
+
+   - To increase Power:
+        - Larger sample size as random noise avg out, estimate becomes more smaller
+        - Large true effect
+             - True effect: difference between what H0 assumes and the true population
+        - Lower Variance, less noisy data, which is tight and consistent
+        - Higher α as it becomes easier to reject H0 ie more likely to detect true effect.
+
 
 
       
