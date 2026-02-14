@@ -48,3 +48,21 @@ from sklearn.impute import KNNImputer
 imputer = KNNImputer(n_neighbors=3)
 X_imputed = imputer.fit_transform(X)
 
+# MICE (Multiple Imputation by Chained Equations)
+'''
+Model each feature as a function of other features
+
+Pick column
+Predict it using other columns
+Fill missing values
+Move to next column
+Repeat
+
+Preserves relationships between variables
+Works well under MAR
+
+Computationally heavy
+Overfit small datasets
+Needs tuning
+'''
+
