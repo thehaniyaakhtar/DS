@@ -4,17 +4,17 @@
 - Only answers how the dataset looks like
 
 1. Measures of Central Tendency: center of data
-   - Mean: Average; balancing point of dataset
-        - Uses every point in dataset
-        - Sensitive to outliers
-        - Minimizes total squared distance/total squared error, thus used in Regression
-   - Median: Middle Value
-        - Ignores magnitude
-        - Robust to outliers
-        - Better for skewed data
-   - Mode: Most frequent value
-        - Data is categorical
-        - popularity matters
+Mean: Average; balancing point of dataset
+   - Uses every point in dataset
+   - Sensitive to outliers
+   - Minimizes total squared distance/total squared error, thus used in Regression
+Median: Middle Value
+   - Ignores magnitude
+   - Robust to outliers
+   - Better for skewed data
+Mode: Most frequent value
+   - Data is categorical
+   - popularity matters
      
 2. Measures of Spread/Dispersion: How spread out is the data
    - Range: Max - Min
