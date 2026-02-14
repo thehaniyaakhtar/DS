@@ -242,7 +242,13 @@ This is due to:
 
 ### Multicollinearity
 Two or more predictor variables in regression are highly correlated with each other
-It is about the relationship between X variables.
+It is about the relationship between X variables, not between X and Y.
+
+#### Problem for Regression:
+Regression answers: "If I increase X1 by 1 unit,, keeping other X's constant, how does Y change?"
+
+
+
 
 
  
