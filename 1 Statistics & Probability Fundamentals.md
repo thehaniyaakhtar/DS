@@ -173,7 +173,49 @@ Every hypothesis testing seperates signal and random variation.
         - Lower Variance, less noisy data, which is tight and consistent
         - Higher α as it becomes easier to reject H0 ie more likely to detect true effect.
 
+## Confidence Intervals & margin of error
+
+### Confidence Interval
+- The population parameter is not known, only sample
+- Sample statistics vary from sample to sample
+- CI intervals quantify that uncertainty
+
+  #### Structure of CI = Estimate +- Margin or Error
+
+### Margin of Error
+- = z* x Standard Error
+- z* depends on CI
+- SE = variability of estimate
+
+### Standard Error
+- Standard Deviation measures spread of data
+- Standard error measures spread of the estimate
+- As sample size increases, SE decreases
+
+#### 95% CI ~ If sampling process is repeating many times, 95% of those intervals will contain true mean
+
+- Width of CI is effected by:
+     - CI: Higher confidence ~ wider interval
+     - Higher variance ~ wider interval
+     - Sample Size: Larger sample ~ narrower interval
+  
 
 
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
