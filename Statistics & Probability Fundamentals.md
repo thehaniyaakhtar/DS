@@ -113,7 +113,40 @@
 #### CLT: with more data, sampling distribution becomes normal
 
 ## Hypothesis Testing
-Is an effect real or just random noise
+"Is an effect real or just random noise"
+Every hypothesis testing seperates signal and random variation.
+
+## Null and Alternative Hypothesis
+#### Null Hypothesis (H0):
+   - No effect/ difference/ change/ quo
+   - Default assumption
+   - "New drug has no effect"/ "Mean diff = 0"/ "New model is same as old model"
+
+#### Alternative Hypothesis (H1):
+   - There is an effect/ change
+   - "New drug improves recovery"/ "Mean diff != 0"
+     
+### We font prove H1, we try to see whether we have enough evidence to reject H0
+
+### Significance Level
+   - α: Maximum probability of falsely rejecting H0, commonly =0.05
+   - One is willing to accept 5% risk of false alarm
+
+### p-value (prob value)
+   - "Under no real effect, what is the probability of seeing results this extreme just by random chance"
+   - Start with null hypothesis
+   - Collect data, run statistical test
+   - gives u a p-value
+   - compare p-value to significance level
+
+   - Small p-value (=< 0.05):
+        - result is likely a null hypothesis
+        - reject null hypothesis
+   - Large p-value (> 0.05):
+        - result is consistent with random chance
+        - fail to reject null hypothesis
+
+
 
       
 
