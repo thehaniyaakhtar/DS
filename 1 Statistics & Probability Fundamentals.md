@@ -198,6 +198,53 @@ Every hypothesis testing seperates signal and random variation.
      - CI: Higher confidence ~ wider interval
      - Higher variance ~ wider interval
      - Sample Size: Larger sample ~ narrower interval
+
+## Bayes Theorem and Conditional Probability
+
+### Conditional Probability
+P(A|B): What is the probability of A, given that B has already happened
+Instead of looking at all outcomes, the sample space is reduced to only B, A is measured inside it.
+
+### Baye's Theorem
+The inversion
+Gven we know: P(Evidence|Hypothesis)
+We want to know: P(Hypothesis|Evidence)
+   - P(H): Prior Probability, belief in hypothesis before seeing data.
+   - P(E|H): Probability of observing evidence if hypothesis is true.
+   - P(E): Total probability of observing evidence
+   - P(H|E): Posterior Probability, updated belief
+
+## Correlation vs. Causation, multicollinearity
+
+### Correlation
+- The strength and direction if linear relationship between 2 variables
+- If X increases and Y tends to increase: positive correlation
+- If X increases and Y decreases: negative correlation
+- Quantified by correlation coefficient (r):
+     - r = +1: perfect positive linear
+     - r = 0: no linear relationship
+     - r = -1: perfect negative linear
+- Symmetric
+
+### Causation
+- Changes in X directly produce changes in Y, it is directional.
+
+#### Correlation != Causation
+This is due to:
+   - Confounding Variable:
+        A third factor causes both situations
+   - Reverse Casuality
+        Seems like X causes Y, but Y causes X
+   - Coincidence
+        With enough variables, some will correlate randomly
+     
+#### Correlation measures association, causation implies mechanism and intervention effect.
+
+### Multicollinearity
+Two or more predictor variables in regression are highly correlated with each other
+It is about the relationship between X variables.
+
+
  
 
   
