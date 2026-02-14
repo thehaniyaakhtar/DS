@@ -65,4 +65,9 @@ Computationally heavy
 Overfit small datasets
 Needs tuning
 '''
+from sklearn.experimental import enable_iterative_imputer
+from sklearn.impute import IterativeImputer
+
+imputer = IterativeImputer()
+X_imputed = imputer.fit_transform(X)
 
