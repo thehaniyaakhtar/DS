@@ -71,3 +71,18 @@ from sklearn.impute import IterativeImputer
 imputer = IterativeImputer()
 X_imputed = imputer.fit_transform(X)
 
+# Sometimes missingness itself carries information, Add binary feature
+df["income_missing"] = df["income"].isnull().astype(int)
+# then impute
+
+# Never fit imputer on full dataset before train/test split.
+
+from sklearn.pipeline import Pipeline
+
+pipeline = Pipeline([
+    ('impute', SimpleImputer(strategy='median')),
+    ('model', SomeModel())
+])
+
+# prevents data leakage
+
