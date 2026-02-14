@@ -198,6 +198,8 @@ Every hypothesis testing seperates signal and random variation.
      - CI: Higher confidence ~ wider interval
      - Higher variance ~ wider interval
      - Sample Size: Larger sample ~ narrower interval
+ 
+
   
 
 
