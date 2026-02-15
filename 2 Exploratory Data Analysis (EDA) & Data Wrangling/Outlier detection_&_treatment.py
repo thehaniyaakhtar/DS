@@ -27,6 +27,7 @@ no heavy skew
 few extreme points
 '''
 '''
+IQR
 Q1 = 25th Percentile
 Q3 = 75th Percentile
 
