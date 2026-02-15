@@ -43,3 +43,24 @@ plt.show()
 #horizontal version
 sns.boxplot(x=[""])
 plt.show()
+
+'''
+Scatter Plot
+Is there correlation
+Is the relationship linear
+Are clusters present
+'''
+plt.figure()
+plt.scatter(df["x"], df["y"], alpha=0.6)
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Scatter plot")
+plt.show()
+
+#regression line:
+sns.regplot(data=df, x="x", y="y")
+plt.show()
+
+#colored by category
+sns.scaterplot(data=df, x="x", y="y", hue="category")
+plt.show()
