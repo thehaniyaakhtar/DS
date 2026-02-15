@@ -12,3 +12,17 @@ ROW_NUMBER() OVER(
 AS row_num
 FROM Orders;
 -- gives each customer's order a rank
+
+-- Rank 
+-- Rank customers by spending
+SELECT
+	c.customer_id,
+	SUM(o.amount) AS total_spent,
+	RANK() OVER(
+  		ORDER BY SUM(o.amount) DESC
+	) AS spending_rank
+FROM Customers c
+JOIN Orders o
+	ON c.customer_id = o.customer_id
+GROUP BY c.customer_id;
+
