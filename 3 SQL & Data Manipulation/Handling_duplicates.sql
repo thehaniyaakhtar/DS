@@ -16,3 +16,6 @@ WHERE customer_id IN (
     ) t
     WHERE rn > 1
 );
+
+-- partition by: to partition rows of table into groups
+
