@@ -112,3 +112,9 @@ X_poly = poly.fit_transform(X)
 Linear models are linear in parameters, not linear in variables
 By adding X², curved relationships are allowed
 '''
+# scaling: conrols magnitude
+# encoding: translates categories
+# binning: simplifies continuous signals
+# polynomial features: injects non-linearity
+
+
