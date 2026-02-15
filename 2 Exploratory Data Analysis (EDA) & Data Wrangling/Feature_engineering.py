@@ -58,10 +58,39 @@ from sklearn.preprocessing import MinMaxScaler
 # used in neural networs and bounded features
 # Tree based models do no require scaling, they split based on thresholds
 
+'''
+Encoding Categorical Variables
+Models understand numbers not categories
 
+Label Encoding
+Red: 0
+Blue: 1
+Green: 2
 
+Used only for ordinal categories:
+low << medium << high
+'''
+from sklearn.preprocessing import LabelEncoder
 
+'''
+One Hot Encoding
+Creates binary columns
+Red → [1,0,0]
+Blue → [0,1,0]
+Green → [0,0,1]
+Used for Nominal Categories, in linear models
+'''
+from sklearn.preprocessing import OneHotEncoder
 
+# disadvantages: High cardinality: explosion of columns
+# 1000 unique cities: 1000 columns
 
-
-
+'''
+Binning:
+Convert continuous variables into categories
+Handles non linear relationships
+Reduces noise
+'''
+import pandas as pd
+df['age_bin'] = pd.cut(df["age"], bin = 4)
+#can lead to loss of info
