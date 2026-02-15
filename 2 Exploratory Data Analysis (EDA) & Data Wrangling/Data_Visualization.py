@@ -81,3 +81,21 @@ sns.heatmap(corr, annot=True, cmap="coolwarm", fmt=".2f")
 plt.title("")
 plt.show()
 
+'''
+pairplot: multivariate 
+creates scatter plots for every variable pair
+'''
+sns.pairplot(df)
+plt.show()
+
+#colored by target class
+sns.pairplot(df, hue="target")
+plt.show()
+
+sns.pairplot(df[["feature", "feature"]], hue="target")
+plt.show()
+
+# violin plot
+sns.violinplot(data=df, x="category", y="feature")
+plt.show()
+
