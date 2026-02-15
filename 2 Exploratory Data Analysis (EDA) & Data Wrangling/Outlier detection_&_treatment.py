@@ -17,8 +17,8 @@ import numpy as np
 mean = np.mean(X)
 std = np.std(X)
 
-x_scores = (X - mean) / std
-outliters = np.abs(z_scores) > 3
+z_scores = (X - mean) / std
+outliers = np.abs(z_scores) > 3
 
 '''
 used best when
