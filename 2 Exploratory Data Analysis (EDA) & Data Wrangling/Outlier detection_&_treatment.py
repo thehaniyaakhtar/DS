@@ -50,3 +50,34 @@ outliers = (X<lower) | (X>upper)
 uses median based spread
 robust to skew
 '''
+'''
+Winsorization
+handling values by caping them
+
+replace extreme values with boudaries
+Values above 95th percetile: replace with 95th percentile value
+Values below 5th percentile; replace with 5th percentile value
+'''
+from scipy.stats.mstats import winsorize
+X_wins = winsorize(X< limits=[0.05, 0.05])
+
+'''
+preserves dataset size
+reduce extreme influence
+keep rank structure intact
+'''
+
+'''
+remove if:
+data entry error
+impossible values
+
+cap if:
+heavy tailed distribution
+extreme values distort loss
+
+keep if:
+they are genuinely rare events
+modelling risk/fraud
+outliers are signals
+'''
