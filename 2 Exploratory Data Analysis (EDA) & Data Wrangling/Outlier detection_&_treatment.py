@@ -26,3 +26,26 @@ data roughly normal
 no heavy skew
 few extreme points
 '''
+'''
+Q1 = 25th Percentile
+Q3 = 75th Percentile
+
+IQR = Q3 - Q1
+Lower = Q1 - 1.5 * IQR
+Upper = Q3 + 1.5 * IQR
+Outside points are outliers
+'''
+
+q1 = np.percentile(X, 25)
+q2 = np.percentile(X, 75)
+IQR = q3 - q1
+
+lower = q1 - 1.5*IQR
+upper = q3 - 1.5*IQR
+
+outliers = (X<lower) | (X>upper)
+
+'''
+uses median based spread
+robust to skew
+'''
