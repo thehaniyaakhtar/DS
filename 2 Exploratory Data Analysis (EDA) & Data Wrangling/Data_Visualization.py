@@ -21,3 +21,25 @@ plt.show()
 #comparison by category
 sns.histplot(data=df, x="Feature", hue="Category", kde=True, element="step")
 plt.show()
+
+'''
+Box Plots
+where is the median
+the spread of data
+and are there outliers
+
+used for comparing distributions across categories
+avoided when dataset is v small
+'''
+#single variable
+sns.boxplot(y=df["feature"])
+plt.title("")
+plt.show()
+
+#grouped by category
+sns.boxplot(data=df, x="", y="")
+plt.show()
+
+#horizontal version
+sns.boxplot(x=[""])
+plt.show()
