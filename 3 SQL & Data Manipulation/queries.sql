@@ -36,7 +36,16 @@ FROM Customers c
 FULL OUTER JOIN Orders o
 ON c.customer_id = o.customer_id
 ;
-
+-- JOIN 3 Tables
+SELECT 
+	c.first_name,
+	o.item,
+	s.status
+FROM Customers c
+LEFT JOIN Orders o 
+	ON c.customer_id = o.customer_id
+LEFT JOIN Shippings s
+	ON c.customer_id = s.customer;
 
 
 
