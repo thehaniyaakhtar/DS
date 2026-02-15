@@ -26,3 +26,17 @@ JOIN Orders o
 	ON c.customer_id = o.customer_id
 GROUP BY c.customer_id;
 
+-- Lag
+-- Compare order amounts over time
+SELECT
+order_id,
+amount,
+LAG(amount) OVER (
+  ORDER BY order_id
+) AS previous_amount
+FROM Orders;
+
+-- LAG looks at the previous row's value without removing any rows
+-- commonly used to compare values over time
+-- calculate differences between rows
+-- compute growth or deline
