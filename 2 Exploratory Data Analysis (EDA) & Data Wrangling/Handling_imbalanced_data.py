@@ -24,3 +24,19 @@ from imblearn.under_sampling import RandomUnderSampler
 
 rus = RandomUnderSampler()
 X_res, y_res = rus.fit_resample(X, y)
+
+'''
+Oversampling
+Increases minority class size
+simplest method, duplicates minority samples
+
+it keeps all data and balances distribution
+duplication can lead to overfitting risk
+model may memorize minority points
+'''
+from imblearn.over_sampling import RandomOverSampler
+
+res = RandomOveSampler()
+X_res, y_res = res.fit_resample(X, y)
+
+
