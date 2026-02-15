@@ -38,5 +38,30 @@ from imblearn.over_sampling import RandomOverSampler
 
 res = RandomOveSampler()
 X_res, y_res = res.fit_resample(X, y)
+'''
+SMOTE
+Synthetic Minority Oversampling Technique
 
+Doesnt duplicate minority samples, creates synthetic new ones
 
+picks a minority point
+finds k nearest minority neighbors
+generates new sample along lines between them
+
+it introduces variation, reduces overfitting
+expands minority decision region
+'''
+from imblearn.over_sampling import SMOTE
+
+smote = SMOTE()
+X_res, y_res = smote.fit_resample(X, y)
+
+'''
+Struggles with categorical features
+Fails if minority class is sparse
+'''
+'''
+Oversampling shrinks majority cluster volume
+Undersampling shrinks majority cluster
+SMOTE smooths minority decision boundary
+'''
