@@ -47,5 +47,9 @@ LEFT JOIN Orders o
 LEFT JOIN Shippings s
 	ON c.customer_id = s.customer;
 
+-- CROSS JOIN
+SELECT *
+FROM Customers
+CROSS JOIN Orders;
 
 
