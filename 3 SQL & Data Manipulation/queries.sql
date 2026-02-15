@@ -13,3 +13,18 @@ FROM Customers c
 INNER JOIN Orders o
 	ON c.customer_id = o.customer_id;
 
+/*
+Left Joins
+*/
+-- All customers + their orders:
+SELECT 
+	c.customers_id,
+	c.first_name,
+	o.orer_id,
+	o.item
+FROM Customer c
+LEFT JOIN Orders o
+	ON c.customers_id = o.customers_id
+;
+
+
