@@ -94,3 +94,21 @@ Reduces noise
 import pandas as pd
 df['age_bin'] = pd.cut(df["age"], bin = 4)
 #can lead to loss of info
+
+'''
+Polynomial Features
+Used to model non linear relationships in linear models
+If relationship is:
+Y = aX² + bX + c
+Linear Regression alone cannot capture it
+X² is treated as a feature
+Linear regression can model it
+'''
+from sklearn.preprocessing import PolynomialFeatures
+poly = PolynomialFeatures(degree=2)
+X_poly = poly.fit_transform(X)
+
+'''
+Linear models are linear in parameters, not linear in variables
+By adding X², curved relationships are allowed
+'''
