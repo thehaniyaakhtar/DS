@@ -64,3 +64,20 @@ plt.show()
 #colored by category
 sns.scaterplot(data=df, x="x", y="y", hue="category")
 plt.show()
+
+'''
+Heatmaps
+used for correlation matrices
+which variables are strongly correlated
+points out multicollinearity
+
+correlation > 0.8: multicollinear
+blocks feature redundancy
+'''
+corr = df.corr(numeric_only = True)
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(corr, annot=True, cmap="coolwarm", fmt=".2f")
+plt.title("")
+plt.show()
+
