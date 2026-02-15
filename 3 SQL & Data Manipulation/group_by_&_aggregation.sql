@@ -18,6 +18,17 @@ ON c.customer_id = o.customer_id
 GROUP BY c.country
 ;
 
+-- Having 
+SELECT
+c.customer_id,
+SUM(o.amount) AS total_spent
+FROM Customers c
+JOIN Orders o
+ON c.customer_id = o.customer_id
+GROUP BY c.customer_id
+HAVING SUM(o.amount) > 500
+;
+
 
 
 
