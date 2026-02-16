@@ -42,3 +42,8 @@ X = df[["", "", ""]]
 one col as series: df[col]
 one col as datafram: df[[col]]
 multiple cols: df[[col, col, col]]
+
+# defining and fitting a model
+from sklearn.tree import DecisionTreeRegressor
+df_model = DecisionTreeRegressor(random_state=1)
+df_model.fit(X, y)
