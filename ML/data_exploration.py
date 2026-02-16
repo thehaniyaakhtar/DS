@@ -33,3 +33,12 @@ df.corr()
 # parenthesis used in methods not attributes
 # methods are actions on dataframes involving computation, require () to eexecute (verb)
 # attributes are properties that store info (noun)
+
+# building a model
+# data selection
+y = df["target_col"]
+X = df[["", "", ""]]
+'''
+one col as series: df[col]
+one col as datafram: df[[col]]
+multiple cols: df[[col, col, col]]
