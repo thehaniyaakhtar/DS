@@ -57,3 +57,13 @@ df_model.predict(X.head())
 from sklearn.metrics import mean_absolute_error
 pred_data = df_model.predict(X)
 mean_absolute_error(y, pred_data) # models pred values & actual values
+
+# train and testing data
+from sklearn.model_selection import train_test_split
+train_X, val_x, train_y, val_y = train_test_split(X, y, random_state = 0)
+
+# random_split
+#controls randomness
+#ensures consistency
+# random_state = 42 doesnt matter
+# ensures split is same, else the result changes everytime
