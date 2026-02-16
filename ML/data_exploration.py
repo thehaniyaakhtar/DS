@@ -29,3 +29,7 @@ df['column'].value_counts()
 
 # correlation matrix from -1 to 1
 df.corr()
+
+# parenthesis used in methods not attributes
+# methods are actions on dataframes involving computation, require () to eexecute (verb)
+# attributes are properties that store info (noun)
