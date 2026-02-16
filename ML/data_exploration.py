@@ -47,3 +47,13 @@ multiple cols: df[[col, col, col]]
 from sklearn.tree import DecisionTreeRegressor
 df_model = DecisionTreeRegressor(random_state=1)
 df_model.fit(X, y)
+
+# predict results
+df_model.predict(X)
+df_model.predict(X.head())
+
+#model validation
+# calculating error
+from sklearn.metrics import mean_absolute_error
+pred_data = df_model.predict(X)
+mean_absolute_error(y, pred_data) # models pred values & actual values
