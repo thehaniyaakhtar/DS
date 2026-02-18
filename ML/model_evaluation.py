@@ -8,4 +8,6 @@ Testing different values of max_leaf_nodes for Decision Tree and calculating MAE
 low max_leaf_nodes = 5, high MAE, underfitting
 high max_leaf_nodes = 5000, overfit 
 optimal max_leaf_nodes: minimize MAE without overfitting
+
+need low mae as mae is the average of all your models mistakes
 '''
