@@ -14,7 +14,7 @@
 # relative distances between points remain same
 # sensitive to outliers
 data = pd.DataFrame(kickstarter, usecols = ['specific_col'])
-scaled_data = minimax_scaling(data, columns=['specific_cols'])
+scaled_data = minimax_scaling(data, columns=['specific_col'])
 # converts values range to [0, 1]
 
 #confirm scaling
