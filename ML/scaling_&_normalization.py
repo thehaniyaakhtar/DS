@@ -41,3 +41,11 @@ print("Max Value", float(data.max()))
 # many ML models assume data is normally distributed 
 # it reduces skewness, handles extreme values
 
+# Linear Distribution Analysis
+# supervised classification algorithm
+# finds the best linear combination of features
+# seperates classes as much as possible
+# maximizes distances between classes
+# minimizes spread with each class
+# assumes data is normalised
+# it improves class seperation
