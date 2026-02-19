@@ -49,3 +49,6 @@ data.fillna(method = 'bfill', axis=0).fillna(0)
 
 data.fillna(method = 'bfill', axis=1).fillna(0)
 # axis = 1; right to left; next col value
+
+# axis=0  ↓  (move along rows)
+# axis=1  →  (move along columns)
