@@ -20,7 +20,7 @@ percent = (missing/total)*100
 data.dropna()
 
 #removing columns
-data.dropna(axis=1)
+dropped = data.dropna(axis=1)
 
 #calculating dropped columns
 # cols [1]
