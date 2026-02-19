@@ -37,3 +37,15 @@ data.fillna(0)
 # imputation techniques
 # forward fill: ffill: fills downward with prev value
 # backward fill: bfill: fills upward with  below value
+
+data.fillna(method = 'ffill', axis=0).fillna(0)
+# axis = 0: top to bottom, prev row
+
+data.fillna(method = 'ffill', axis=1).fillna(0)
+# axis = 1; left to right, prev col
+
+data.fillna(method = 'bfill', axis=0).fillna(0)
+# axis = 0; bottom to top; next row value
+
+data.fillna(method = 'bfill', axis=1).fillna(0)
+# axis = 1; right to left; next col value
