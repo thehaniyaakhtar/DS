@@ -28,3 +28,12 @@ dropped = data.dropna(axis=1)
 org_cols = data.shape[1]
 dropped_cols = dropped.shape[1]
 calc = (org_cols - dropped_cols)
+
+# filling mising values
+
+# replacing NaN values with 0
+data.fillna(0)
+
+# imputation techniques
+# forward fill: ffill: fills downward with prev value
+# backward fill: bfill: fills upward with  below value
