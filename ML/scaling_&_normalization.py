@@ -13,6 +13,14 @@
 # sensitive to outliers
 # relative distances between points remain same
 # sensitive to outliers
+data = pd.DataFrame(kickstarter, usecols = ['specific_col'])
+scaled_data = minimax_scaling(data, columns=['specific_cols'])
+# converts values range to [0, 1]
+
+#confirm scaling
+print("Original data", data.head())
+print("Min Value", float(data.min()))
+print("Max Value", float(data.max()))
 
 # standardization 
 # centers data around a mean = 0 
