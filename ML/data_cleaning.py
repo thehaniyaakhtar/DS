@@ -14,3 +14,17 @@ missing = missing_values.sum()
 # Percentage missing
 percent = (missing/total)*100
 
+# dropping missing values
+
+#removing rows
+data.dropna()
+
+#removing columns
+data.dropna(axis=1)
+
+#calculating dropped columns
+# cols [1]
+# rows [0]
+org_cols = data.shape[1]
+dropped_cols = dropped.shape[1]
+calc = (org_cols - dropped_cols)
