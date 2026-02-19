@@ -43,6 +43,7 @@ print("Max Value", float(data.max()))
 
 # Linear Distribution Analysis
 # supervised classification algorithm
+# dimensionality reduction method
 # finds the best linear combination of features
 # seperates classes as much as possible
 # maximizes distances between classes
@@ -57,3 +58,4 @@ print("Max Value", float(data.max()))
 # reduces skewness
 # spreads data more evenly
 # it improves ML models performance
+# works for positive data only
