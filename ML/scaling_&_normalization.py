@@ -20,3 +20,9 @@
 # mean becomes 0
 # std dev bcomes 1
 # handles outliers better than min max scaling
+
+# K Nearest Neighbors (KNN)
+# Distance based classification algorithm
+# classifies data point based on nearest neighbors
+# scaling is imp as distance metrics are sensitive to scale
+# without it, larger features will dominate
