@@ -25,3 +25,36 @@ print(score_dataset(
     y_valid
 ))
 # Train model without columns containing missing values
+
+# Imputation
+# Replacing missing values with meaningful estimates instead of deleting data
+from sklearn.impute import SimpleImputer
+
+# Create imputer object
+my_imputer = SimpleImputer()
+# default strategy: mean
+# learns missing value patters from training data
+
+# imputing training data
+imputed_X_train = pd.DataFrame(
+    my_imputer.fit_transform(X_train)
+)
+
+# imputing validation data
+imputed_X_valid = pd.DataFrame(
+    my_imputer.transform(X_valid)
+)
+
+# transform() prevents data leakage
+
+# restoring column names
+imputed_X_train.columns = X_train.columns
+imputed_X_valid.columns = X_valid.columns
+
+# scoring after imputation
+print(score_dataset(
+    imputed_X_train,
+    imputed_X_valid,
+    y_train,,
+    y_valid
+))
