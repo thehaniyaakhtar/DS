@@ -49,3 +49,11 @@ print("Max Value", float(data.max()))
 # minimizes spread with each class
 # assumes data is normalised
 # it improves class seperation
+
+# box cox transformation
+# applies power transformation to skewed data
+# makes data more normally distributed
+# only works for positive values
+# reduces skewness
+# spreads data more evenly
+# it improves ML models performance
