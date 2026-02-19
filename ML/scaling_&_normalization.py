@@ -13,3 +13,10 @@
 # sensitive to outliers
 # relative distances between points remain same
 # sensitive to outliers
+
+# standardization 
+# centers data around a mean = 0 
+# scales using std dev
+# mean becomes 0
+# std dev bcomes 1
+# handles outliers better than min max scaling
