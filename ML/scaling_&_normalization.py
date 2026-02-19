@@ -1,4 +1,3 @@
-# scaling and normalization
 #  scaling: changing the range of features values
 # data distribution shape/ relationship does not change
 # chnges the magnitude
@@ -34,3 +33,11 @@ print("Max Value", float(data.max()))
 # classifies data point based on nearest neighbors
 # scaling is imp as distance metrics are sensitive to scale
 # without it, larger features will dominate
+
+# normalization
+# transformation process that reshapes data, follows normal distribution
+# it has a bell shaped curve
+# symmetric around mean
+# many ML models assume data is normally distributed 
+# it reduces skewness, handles extreme values
+
