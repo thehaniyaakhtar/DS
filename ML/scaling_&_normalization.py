@@ -59,3 +59,10 @@ print("Max Value", float(data.max()))
 # spreads data more evenly
 # it improves ML models performance
 # works for positive data only
+
+normalized_data = stats.boxcox(org_data)
+# stats.boxcox() makes data closer to gaussian dist
+# it returns a tuple, not a single array
+# (normalized_values, lambda_value)
+# normalized_Data[0]: contains transformed data
+# normalized_data[1]: comtains lambda values used in transformation
