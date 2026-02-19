@@ -22,3 +22,9 @@ ordinal = OrdinalEncoder()
 label_X_train[object_cols] = ordinal.fit_transform(X_train[object_cols])
 
 label_X_valid[object_cols] = ordinal.transform(X_train[object_cols])
+
+# replaces categorical columns with a single column using numerical columns
+# each category has a unique value assigned
+# existing columns are replced, no new ones are added
+# works well for high cardinality if categorical order makes sense
+# if not encoding introduces misleading patterns in ML model
