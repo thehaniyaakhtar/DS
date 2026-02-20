@@ -32,6 +32,7 @@ label_X_valid[object_cols] = ordinal.transform(X_train[object_cols])
 # one hot encoding
 # creates a new column for each unique category
 # categorical data turns into multiple binary columns
+# it helps avoid numerical relationships between categories which can be misleading
 '''
 dataset: 10000 rows
 100 unique categories ~ 100 new columns ~ 99 zeroes, 1 one
