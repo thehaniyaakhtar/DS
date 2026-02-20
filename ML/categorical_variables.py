@@ -41,3 +41,53 @@ dataset: 10000 rows
 for 10000 rows: 10000*99
 it is thus only appropriate for smaller cardinalities
 '''
+
+# importing encoder
+from sklearn.preprocessing import OneHotEncoder
+
+# creating encoder
+OH_encoder = OneHotEncoder(
+    handle_unknown = 'ignore',
+    sparse = False
+)
+# handle unknown: if a category was seen in training data and not in validation, ignore it, dont throw error, rurns into all 0s
+# sparse = False 
+# By default OH returns sparse matrix
+# Sparse matrix stores only non zero values
+# thus sparse = False returns normal dense NumPy array
+
+# Fit and Transformer
+OH_cols_train = pd.DataFrame(
+    OH_encoder.fit_transform(X_train[object_cols])
+)
+
+# fit(): learns unique categories from train data
+# transform(): converts categories to binary columns
+# pd.DataFrame: converts numpy array into datafram
+
+# restoring index as original index is lost 
+# to ensure rows align correctly
+OH_cols_train.index = X_train.index
+
+#applying to validation
+OH_cols_valid = pd.DataFrame(
+    OH_encoder.transform(X_valid[object_cols])
+)
+
+OH_cols_valid.index = X_valid.index
+
+# Removing original categorical columns
+num_X_train = X_train.drop(object_cols, axis=1)
+num_X_valid = X_valid.drop(object_cols, axis=1)
+
+OH_X_train = pd.concat([num_X_train, OH_cols_train], axis=1)
+OH_X_valid = pd.concat([num_X_valid, OH_cols_valid], axis=1)
+
+# combine numeric cols
+# new encoded categorical columns
+
+# convert column names to string
+OH_X_train.columns = OH_X_train.columns.astype(str)
+# some models expect column names to be strings
+
+
