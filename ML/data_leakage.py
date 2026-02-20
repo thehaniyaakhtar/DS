@@ -18,6 +18,9 @@ print(cv_score.mean())
 
 # RFC, run 5 fold ccv, compute accuracy and the average
 
+# predicting who has a CC
+# target variable: cardholder (0 or 1)
+
 # seperate expenditure values
 cardholders = X.expenditure[y == 1]
 non_cardholders = X.expenditure[y == 0]
