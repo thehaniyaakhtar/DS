@@ -16,4 +16,30 @@ cv_score = cross_val_score(my_pipeline, X, y, cv = 5, scoring = 'accuracy')
 
 print(cv_score.mean())
 
-# RFC,, run 5 fold ccv, compute accuracy and the average
+# RFC, run 5 fold ccv, compute accuracy and the average
+
+# seperate expenditure values
+cardholders = X.expenditure[y == 1]
+non_cardholders = X.expenditure[y == 0]
+
+# percentage of zero expenditure
+print("No card: {:.2f}".format((non_cardholders == 0).mean()))
+print("Card: {:.2f}".format((cardholders == 0).mean()))
+
+# remove leaky features
+leaks = ['expenditure', 'share', 'active', 'majorcards']
+# detects leakage by analyzing exp. column
+# observes that non holders: 0 expenditure...
+X2 = X.drop(leaks, axis=1)
+# removes leaky columns
+
+# retrain model
+cv_scores = cross_val_scores(
+    my_pipeline,
+    X2,
+    y,
+    cv = 5,
+    scoring='accuracy'
+)
+
+print("Accuracy without leakage: {:.4f}".format(cv_scores.mean()))
