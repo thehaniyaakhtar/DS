@@ -29,6 +29,9 @@ non_cardholders = X.expenditure[y == 0]
 print("No card: {:.2f}".format((non_cardholders == 0).mean()))
 print("Card: {:.2f}".format((cardholders == 0).mean()))
 
+# almost all cardholders have some expenditure 
+# non ch have 0 expenditure 
+
 # remove leaky features
 leaks = ['expenditure', 'share', 'active', 'majorcards']
 # detects leakage by analyzing exp. column
