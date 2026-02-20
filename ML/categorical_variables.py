@@ -28,3 +28,15 @@ label_X_valid[object_cols] = ordinal.transform(X_train[object_cols])
 # existing columns are replced, no new ones are added
 # works well for high cardinality if categorical order makes sense
 # if not encoding introduces misleading patterns in ML model
+
+# one hot encoding
+# creates a new column for each unique category
+# categorical data turns into multiple binary columns
+'''
+dataset: 10000 rows
+100 unique categories ~ 100 new columns ~ 99 zeroes, 1 one
+1 original column is removed
+100 new are added: net +99
+for 10000 rows: 10000*99
+it is thus only appropriate for smaller cardinalities
+'''
