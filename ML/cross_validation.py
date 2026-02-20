@@ -45,3 +45,12 @@ for i in range(1, 9):
 # selecting the best parameter
 # find the number of estimators with the lowest MAE
 n_estimators_best = min(results, key = results.get)
+
+# more reliable estimate
+# uses data more efficiently
+# better for smaller datasets
+# better for hyperparameter tuning
+
+# train/test is better for very large datasets
+# final evaluation after tuning
+# quick exp
