@@ -15,3 +15,5 @@ my_pipeline = make_pipeline(RandomForestClassifier(n_estimators=100))
 cv_score = cross_val_score(my_pipeline, X, y, cv = 5, scoring = 'accuracy')
 
 print(cv_score.mean())
+
+# RFC,, run 5 fold ccv, compute accuracy and the average
