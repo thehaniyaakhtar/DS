@@ -49,3 +49,27 @@ cv_scores = cross_val_scores(
 )
 
 print("Accuracy without leakage: {:.4f}".format(cv_scores.mean()))
+
+'''
+Data leakage happens when your model learns from information it would not have at prediction time
+
+Main Causes
+
+Using future information
+Feature includes data that happens after the prediction point.
+
+Using target-derived features
+A feature is calculated using the target variable.
+
+Mixing train and test data
+Preprocessing (scaling, imputing, encoding) done before splitting.
+Info from test set leaks into training.
+
+Creating features from full dataset
+Instead of only from training data.
+
+Why It’s Bad
+Model looks extremely accurate.
+Fails badly in real-world use.
+Performance estimate is fake.
+'''
